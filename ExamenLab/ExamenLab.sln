@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenLab", "ExamenLab\ExamenLab.csproj", "{D3ABCE79-6BB9-4497-B7EF-46490E198BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExamenLab", "TestExamenLab\TestExamenLab.csproj", "{13C49127-FEF8-475B-913C-96DFD2DEAC33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfExamenLab", "wcfExamenLab\wcfExamenLab.csproj", "{07A444FA-664E-419D-BE78-FBC51B773ABF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3ABCE79-6BB9-4497-B7EF-46490E198BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ABCE79-6BB9-4497-B7EF-46490E198BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ABCE79-6BB9-4497-B7EF-46490E198BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ABCE79-6BB9-4497-B7EF-46490E198BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
