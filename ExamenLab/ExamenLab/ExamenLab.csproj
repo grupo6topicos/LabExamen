@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Integrales\Constante.cs" />
+    <Compile Include="Integrales\Coseno.cs" />
     <Compile Include="Integrales\Exponencial.cs" />
     <Compile Include="Integrales\Logaritmo.cs" />
     <Compile Include="Integrales\Potencia.cs" />
+    <Compile Include="Integrales\Seno.cs" />
     <Compile Include="Integrales\Simple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

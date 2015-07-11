@@ -43,7 +43,16 @@ namespace WcfService1
                     integralExponencial.ObtenerSolucion();
                     resultado = integralExponencial.ValorSolucion;
                     break;
-
+                case "Seno":
+                    Seno integralSeno = new Seno(a, b);
+                    integralSeno.ObtenerSolucion();
+                    resultado = integralSeno.ValorSolucion;
+                    break;
+                case "Coseno":
+                    Coseno integralCoseno = new Coseno(a, b);
+                    integralCoseno.ObtenerSolucion();
+                    resultado = integralCoseno.ValorSolucion;
+                    break;
             }
             return resultado;
         }
