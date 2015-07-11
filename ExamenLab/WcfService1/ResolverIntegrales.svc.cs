@@ -5,29 +5,25 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using ExamenLab.Integrales;
 
 namespace WcfService1
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    public class Service1 : IResolverIntegrales
     {
-        public string GetData(int value)
-        {
-            return string.Format("You entered: {0}", value);
-        }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
+        public double Integral(double a, double b, double k, int exp, string type) {
+            double resultado = 0.0;
+            switch (type) { 
+                case "Constante":
+                    Constante integral = new Constante(a, b, k);
+                    integral.ObtenerSolucion();
+                    resultado = integral.ValorSolucion;
+                    break;
             }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            return resultado;
         }
     }
 }
