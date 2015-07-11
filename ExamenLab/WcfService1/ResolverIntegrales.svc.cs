@@ -7,6 +7,7 @@ using System.ServiceModel.Web;
 using System.Text;
 using ExamenLab.Integrales;
 
+
 namespace WcfService1
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
@@ -18,14 +19,31 @@ namespace WcfService1
             double resultado = 0.0;
             switch (type) { 
                 case "Simple":
-                    
-
+                    Simple integralSimple = new Simple(a, b);
+                    integralSimple.ObtenerSolucion();
+                    resultado = integralSimple.ValorSolucion;
                     break;
                 case "Constante":
-                    Constante integral = new Constante(a, b, k);
-                    integral.ObtenerSolucion();
-                    resultado = integral.ValorSolucion;
+                    Constante integralConstante = new Constante(a, b, k);
+                    integralConstante.ObtenerSolucion();
+                    resultado = integralConstante.ValorSolucion;
                     break;
+                case "Potencia":
+                    Potencia integralPotencia = new Potencia(a, b, exp);
+                    integralPotencia.ObtenerSolucion();
+                    resultado = integralPotencia.ValorExp;
+                    break;
+                case "Logaritmo":
+                    Logaritmo integralLogaritmo = new Logaritmo(a, b);
+                    integralLogaritmo.ObtenerSolucion();
+                    resultado = integralLogaritmo.ValorSolucion;
+                    break;
+                case "Exponencial":
+                    Exponencial integralExponencial = new Exponencial(a, b);
+                    integralExponencial.ObtenerSolucion();
+                    resultado = integralExponencial.ValorSolucion;
+                    break;
+
             }
             return resultado;
         }

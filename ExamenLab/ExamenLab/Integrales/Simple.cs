@@ -40,7 +40,7 @@ namespace ExamenLab.Integrales
             ValorB = 0.0;
         }
 
-        public Simple(double a, double b, double k){
+        public Simple(double a, double b){
             ValorA = a;
             ValorB = b;
         }

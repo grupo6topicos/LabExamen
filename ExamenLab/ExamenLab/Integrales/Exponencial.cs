@@ -5,11 +5,10 @@ using System.Text;
 
 namespace ExamenLab.Integrales
 {
-    public class Potencia
+    public class Exponencial
     {
         double a;
         double b;
-        int exp;
 
         double solucion;
 
@@ -29,13 +28,6 @@ namespace ExamenLab.Integrales
             { b = ValorB; }
         }
 
-        public int ValorExp{
-            get
-            { return exp; }
-            set
-            { exp = ValorExp; }
-        }
-
         public double ValorSolucion { 
             get
             { return solucion; }
@@ -43,18 +35,14 @@ namespace ExamenLab.Integrales
             { solucion = ValorSolucion; }
         }
 
-        public Potencia() {
+        public Exponencial() {
             ValorA = 0.0;
             ValorB = 0.0;
-            ValorK = 0.0;
-            ValorK = 0;
         }
 
-        public Potencia(double a, double b, int exp){
+        public Exponencial(double a, double b){
             ValorA = a;
             ValorB = b;
-            ValorK = k;
-            ValorExp = exp;
         }
 
         public bool VerificarRango() {
@@ -65,15 +53,12 @@ namespace ExamenLab.Integrales
 
         }
 
-        private void EncontrarSolucion()
-        {
-            solucion = ((Math.Pow(b,(exp + 1))/(exp + 1))-((Math.Pow(a,(exp + 1))/(exp + 1))));
+        private void EncontrarSolucion() { 
+            solucion = Math.Pow(Math.E,b) - Math.Pow(Math.E,a);
         }
 
-        public void ObtenerSolucion()
-        {
-            if (VerificarRango())
-            {
+        public void ObtenerSolucion(){
+            if (VerificarRango()) {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 
