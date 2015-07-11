@@ -17,6 +17,10 @@ namespace WcfService1
         public double Integral(double a, double b, double k, int exp, string type) {
             double resultado = 0.0;
             switch (type) { 
+                case "Simple":
+                    
+
+                    break;
                 case "Constante":
                     Constante integral = new Constante(a, b, k);
                     integral.ObtenerSolucion();

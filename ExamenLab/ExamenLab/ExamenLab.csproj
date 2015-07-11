@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Integrales\Constante.cs" />
     <Compile Include="Integrales\Potencia.cs" />
+    <Compile Include="Integrales\Simple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
