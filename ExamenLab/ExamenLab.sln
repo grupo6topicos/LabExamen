@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenLab", "ExamenLab\Exam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExamenLab", "TestExamenLab\TestExamenLab.csproj", "{13C49127-FEF8-475B-913C-96DFD2DEAC33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfExamenLab", "wcfExamenLab\wcfExamenLab.csproj", "{07A444FA-664E-419D-BE78-FBC51B773ABF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfExamenLab", "WcfService1\WcfExamenLab.csproj", "{3554E9E5-C4D3-47B4-9945-58784CF081C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13C49127-FEF8-475B-913C-96DFD2DEAC33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07A444FA-664E-419D-BE78-FBC51B773ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3554E9E5-C4D3-47B4-9945-58784CF081C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3554E9E5-C4D3-47B4-9945-58784CF081C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3554E9E5-C4D3-47B4-9945-58784CF081C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3554E9E5-C4D3-47B4-9945-58784CF081C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
