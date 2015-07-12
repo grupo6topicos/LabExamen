@@ -58,7 +58,7 @@ namespace ExamenLab.Integrales
         }
 
         public void ObtenerSolucion(){
-            if (VerificarRango()) {
+            if (!VerificarRango()) {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 

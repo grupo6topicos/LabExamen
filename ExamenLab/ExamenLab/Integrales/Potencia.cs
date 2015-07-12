@@ -46,14 +46,12 @@ namespace ExamenLab.Integrales
         public Potencia() {
             ValorA = 0.0;
             ValorB = 0.0;
-            ValorK = 0.0;
-            ValorK = 0;
+            ValorExp = 0;
         }
 
         public Potencia(double a, double b, int exp){
             ValorA = a;
             ValorB = b;
-            ValorK = k;
             ValorExp = exp;
         }
 
