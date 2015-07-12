@@ -25,7 +25,7 @@ namespace ExamenLab.Integrales
 
         private double EncontrarSolucion()
         {
-            return Math.Log(Math.Abs(b), Math.E) - Math.Log(Math.Abs(a), Math.E);
+            return Math.Log(Math.Abs(b)) - Math.Log(Math.Abs(a));
         }
 
         public double ObtenerSolucion()
