@@ -10,59 +10,31 @@ namespace ExamenLab.Integrales
         double a;
         double b;
 
-        double solucion;
-
-        public double ValorA
+        public Simple(double vA, double vB)
         {
-            get
-            { return a; }
-            set
-            { a = ValorA; }
-        }
-
-        public double ValorB
-        {
-            get
-            { return b; }
-            set
-            { b = ValorB; }
-        }
-
-        public double ValorSolucion { 
-            get
-            { return solucion; }
-            set
-            { solucion = ValorSolucion; }
-        }
-
-        public Simple() {
-            ValorA = 0.0;
-            ValorB = 0.0;
-        }
-
-        public Simple(double a, double b){
-            ValorA = a;
-            ValorB = b;
+            a = vA;
+            b = vB;
         }
 
         public bool VerificarRango() {
             bool resultado = true;
-            if(b < a)
+            if(b  < a)
                 resultado  = false;
             return resultado;
 
         }
 
-        private void EncontrarSolucion() { 
-            solucion = (b-a);
+        private double EncontrarSolucion() {  
+            return (b-a);
         }
 
-        public void ObtenerSolucion(){
+        public double ObtenerSolucion()
+        {
             if (!VerificarRango()) {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 
-            EncontrarSolucion();
+            return EncontrarSolucion();
         }
     }
 }

@@ -10,39 +10,14 @@ namespace ExamenLab.Integrales
         double a;
         double b;
 
-        double solucion;
-
-        public double ValorA
-        {
-            get
-            { return a; }
-            set
-            { a = ValorA; }
-        }
-
-        public double ValorB
-        {
-            get
-            { return b; }
-            set
-            { b = ValorB; }
-        }
-
-        public double ValorSolucion { 
-            get
-            { return solucion; }
-            set
-            { solucion = ValorSolucion; }
-        }
-
         public Seno() {
-            ValorA = 0.0;
-            ValorB = 0.0;
+            a = 0.0;
+            b = 0.0;
         }
 
-        public Seno(double a, double b){
-            ValorA = a;
-            ValorB = b;
+        public Seno(double vA, double vB){
+            a = vA;
+            b = vB;
         }
 
         public bool VerificarRango() {
@@ -53,16 +28,16 @@ namespace ExamenLab.Integrales
 
         }
 
-        private void EncontrarSolucion() { 
-            solucion = (- Math.Cos(b) + Math.Cos(a));
+        private double EncontrarSolucion() { 
+            return (- Math.Cos(b) + Math.Cos(a));
         }
 
-        public void ObtenerSolucion(){
-            if (VerificarRango()) {
+        public double ObtenerSolucion(){
+            if (!VerificarRango()) {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 
-            EncontrarSolucion();
+            return EncontrarSolucion();
         }
     }
 }

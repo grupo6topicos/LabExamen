@@ -20,38 +20,31 @@ namespace WcfService1
             switch (type) { 
                 case "Simple":
                     Simple integralSimple = new Simple(a, b);
-                    integralSimple.ObtenerSolucion();
-                    resultado = integralSimple.ValorSolucion;
+                    resultado = integralSimple.ObtenerSolucion();
                     break;
                 case "Constante":
                     Constante integralConstante = new Constante(a, b, k);
-                    integralConstante.ObtenerSolucion();
-                    resultado = integralConstante.ValorSolucion;
+                    resultado = integralConstante.ObtenerSolucion();
                     break;
                 case "Potencia":
                     Potencia integralPotencia = new Potencia(a, b, exp);
-                    integralPotencia.ObtenerSolucion();
-                    resultado = integralPotencia.ValorExp;
+                    resultado = integralPotencia.ObtenerSolucion();
                     break;
                 case "Logaritmo":
                     Logaritmo integralLogaritmo = new Logaritmo(a, b);
-                    integralLogaritmo.ObtenerSolucion();
-                    resultado = integralLogaritmo.ValorSolucion;
+                    resultado = integralLogaritmo.ObtenerSolucion();
                     break;
                 case "Exponencial":
                     Exponencial integralExponencial = new Exponencial(a, b);
-                    integralExponencial.ObtenerSolucion();
-                    resultado = integralExponencial.ValorSolucion;
+                    resultado = integralExponencial.ObtenerSolucion();
                     break;
                 case "Seno":
                     Seno integralSeno = new Seno(a, b);
-                    integralSeno.ObtenerSolucion();
-                    resultado = integralSeno.ValorSolucion;
+                    resultado = integralSeno.ObtenerSolucion();
                     break;
                 case "Coseno":
                     Coseno integralCoseno = new Coseno(a, b);
-                    integralCoseno.ObtenerSolucion();
-                    resultado = integralCoseno.ValorSolucion;
+                    resultado = integralCoseno.ObtenerSolucion();
                     break;
             }
             return resultado;

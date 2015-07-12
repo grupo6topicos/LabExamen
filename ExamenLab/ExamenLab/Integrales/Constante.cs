@@ -11,49 +11,10 @@ namespace ExamenLab.Integrales
         double b;
         double k;
 
-        double solucion;
-
-        public double ValorA
-        {
-            get
-            { return a; }
-            set
-            { a = ValorA; }
-        }
-
-        public double ValorB
-        {
-            get
-            { return b; }
-            set
-            { b = ValorB; }
-        }
-
-        public double ValorK
-        {
-            get
-            { return k; }
-            set
-            { k = ValorK; }
-        }
-
-        public double ValorSolucion { 
-            get
-            { return solucion; }
-            set
-            { solucion = ValorSolucion; }
-        }
-
-        public Constante() {
-            ValorA = 0.0;
-            ValorB = 0.0;
-            ValorK = 0.0;
-        }
-
-        public Constante(double a, double b, double k){
-            ValorA = a;
-            ValorB = b;
-            ValorK = k;
+        public Constante(double vA, double vB, double vK){
+            a = vA;
+            b = vB;
+            k = vK;
         }
 
         public bool VerificarRango() {
@@ -64,16 +25,16 @@ namespace ExamenLab.Integrales
 
         }
 
-        private void EncontrarSolucion() { 
-            solucion = (k*(b-a));
+        private double EncontrarSolucion() { 
+            return (k*(b-a));
         }
 
-        public void ObtenerSolucion(){
-            if (VerificarRango()) {
+        public double ObtenerSolucion(){
+            if (!VerificarRango()) {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 
-            EncontrarSolucion();
+            return EncontrarSolucion();
         }
     }
 }

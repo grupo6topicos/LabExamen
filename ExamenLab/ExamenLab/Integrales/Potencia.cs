@@ -11,48 +11,11 @@ namespace ExamenLab.Integrales
         double b;
         int exp;
 
-        double solucion;
 
-        public double ValorA
-        {
-            get
-            { return a; }
-            set
-            { a = ValorA; }
-        }
-
-        public double ValorB
-        {
-            get
-            { return b; }
-            set
-            { b = ValorB; }
-        }
-
-        public int ValorExp{
-            get
-            { return exp; }
-            set
-            { exp = ValorExp; }
-        }
-
-        public double ValorSolucion { 
-            get
-            { return solucion; }
-            set
-            { solucion = ValorSolucion; }
-        }
-
-        public Potencia() {
-            ValorA = 0.0;
-            ValorB = 0.0;
-            ValorExp = 0;
-        }
-
-        public Potencia(double a, double b, int exp){
-            ValorA = a;
-            ValorB = b;
-            ValorExp = exp;
+        public Potencia(double vA, double vB, int vExp){
+            a = vA;
+            b = vB;
+            exp = vExp;
         }
 
         public bool VerificarRango() {
@@ -63,19 +26,19 @@ namespace ExamenLab.Integrales
 
         }
 
-        private void EncontrarSolucion()
+        private double EncontrarSolucion()
         {
-            solucion = ((Math.Pow(b,(exp + 1))/(exp + 1))-((Math.Pow(a,(exp + 1))/(exp + 1))));
+            return ((Math.Pow(b,(exp + 1))/(exp + 1))-((Math.Pow(a,(exp + 1))/(exp + 1))));
         }
 
-        public void ObtenerSolucion()
+        public double ObtenerSolucion()
         {
-            if (VerificarRango())
+            if (!VerificarRango())
             {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 
-            EncontrarSolucion();
+            return EncontrarSolucion();
         }
     }
 }

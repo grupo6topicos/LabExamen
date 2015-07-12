@@ -10,39 +10,9 @@ namespace ExamenLab.Integrales
         double a;
         double b;
 
-        double solucion;
-
-        public double ValorA
-        {
-            get
-            { return a; }
-            set
-            { a = ValorA; }
-        }
-
-        public double ValorB
-        {
-            get
-            { return b; }
-            set
-            { b = ValorB; }
-        }
-
-        public double ValorSolucion { 
-            get
-            { return solucion; }
-            set
-            { solucion = ValorSolucion; }
-        }
-
-        public Logaritmo() {
-            ValorA = 0.0;
-            ValorB = 0.0;
-        }
-
-        public Logaritmo(double a, double b){
-            ValorA = a;
-            ValorB = b;
+        public Logaritmo(double vA, double vB){
+            a = vA;
+            b = vB;
         }
 
         public bool VerificarRango() {
@@ -53,19 +23,19 @@ namespace ExamenLab.Integrales
 
         }
 
-        private void EncontrarSolucion()
+        private double EncontrarSolucion()
         {
-            solucion = Math.Log(Math.Abs(b), Math.E) - Math.Log(Math.Abs(a), Math.E);
+            return Math.Log(Math.Abs(b), Math.E) - Math.Log(Math.Abs(a), Math.E);
         }
 
-        public void ObtenerSolucion()
+        public double ObtenerSolucion()
         {
-            if (VerificarRango())
+            if (!VerificarRango())
             {
                 throw new Exception("El valor [b] debe ser mayor al valor [a]");
             }
 
-            EncontrarSolucion();
+            return EncontrarSolucion();
         }
     }
 }
